@@ -12,7 +12,7 @@ package OOPS1.Interface;
  * 
  */
 
-public interface USMedical extends WHO {
+public interface B_USMedical_ChildInterface extends A_WHO_GrandParentInterface {
 	
 	int min_fee=10;
 	// static final int min_fee=10; 

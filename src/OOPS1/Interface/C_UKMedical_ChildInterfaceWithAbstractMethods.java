@@ -1,6 +1,6 @@
 package OOPS1.Interface;
 
-public interface UKMedical {
+public interface C_UKMedical_ChildInterfaceWithAbstractMethods {
 
 	 public void physioServies();
 	 public void ENTServices();

@@ -6,7 +6,7 @@ package OOPS1.Interface;
  * @implNote To explain how to IMPLEMENT INTERFACES for a CLASS
  */
 
-public class FortisHospital implements USMedical, UKMedical, IndianMedical {
+public class E_FortisHospital_ChildClassImplementingAllInterfaces implements B_USMedical_ChildInterface, C_UKMedical_ChildInterfaceWithAbstractMethods, D_IndianMedical_ChildInterfaceWithAbstractMethods {
 
 	// whenever a class is IMPLEMENTing any INTERFACE, we MUST DEFINE the METHOD BODY of all METHODS of the interface
 	
