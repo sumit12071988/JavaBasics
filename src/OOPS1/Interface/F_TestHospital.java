@@ -26,10 +26,10 @@ public class F_TestHospital {
 		
 		// Interface object cannot be created but Interface reference variable creation is possible
 		
-		us.ambulanceServices();		// Parent Methods call
-		us.orthopedicServices();	// Parent Methods call
-		us.dentalServices();		// Parent Methods call
-		us.neuroServices();			// Parent Methods call
+		us.ambulanceServices();		// Fortis Hospital -- Ambulance Services
+		us.orthopedicServices();	// Fortis Hospital -- Ortho Services
+		us.dentalServices();		// Fortis Hospital -- Dental Services
+		us.neuroServices();			// Fortis Hospital -- Neuro Services
 		
 		// us.physioServices();	--> this is not accessible since physioServices() is available under UKMedical Interface
 		// One Interface reference variable CANNOT access Other Interface methods. Reason: REFERENCE TYPE CHECK
@@ -52,10 +52,10 @@ public class F_TestHospital {
 		//		required TYPE CASTING. Reason is: WE'RE TRYING TO CREATE AN OBJECT OF THE INTERFACE which is not allowed.
 		
 		
-		us.services_911(); 		// O/p: US 911 Services IF services_911() has been overridden under FortisHospital class
+		us.services_911(); 		// O/p: US 911 Services IF services_911() has NOT been overridden under FortisHospital class
 								// O/p: Fortis 911 Services IF services_911() has been overridden under FortisHospital class
 								
-		fs.services_911();		// O/p: US 911 Services IF services_911() has been overridden under FortisHospital class
+		fs.services_911();		// O/p: US 911 Services IF services_911() has NOT been overridden under FortisHospital class
 								// O/p: Fortis 911 Services IF services_911() has been overridden under FortisHospital class
 								
 		

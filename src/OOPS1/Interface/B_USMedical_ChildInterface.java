@@ -16,7 +16,7 @@ public interface B_USMedical_ChildInterface extends A_WHO_GrandParentInterface {
 	
 	int min_fee=10;
 	// static final int min_fee=10; 
-	// 		the Line 11 is equivalent to Line 12 by-default inside an interface
+	// 		the Line 17 is equivalent to Line 16 by-default inside an interface
 
 	public void orthopedicServices(); 
 	
@@ -26,17 +26,19 @@ public interface B_USMedical_ChildInterface extends A_WHO_GrandParentInterface {
 	
 	public void ambulanceServices();
 	
-	//RULES:
-	// 1. No Method Body. Only Method Declaration/ Prototype is allowed. That is why INTERFACE is called as 100% ABSTRACTTION
-	// 2. No Static Method ABSTRACTS (with only declaration) allowed in INTERFACE BUT Static Methods with method body is allowed in INTERFACE
-	// 3. VARIABLES in interface are STATIC and FINAL by default.
-	// 4. Cannot create an object of an interface.
 	
-	// If a variable is declared with "final" keyword, that variables becomes CONSTANT and value cannot be changed
+	
+	//RULES: 100% ABSTRACTION.
+	// 1. Methods allowed must be PUBLIC, NON-STATIC and ABSTRACT i.e. without method body
+	// 2. Methods allowed with body must be either STATIC or DEFAULT
+	// 3. Variables are CONSTANTS i.e. STATIC and FINAL by default
+	// 4. Cannot create an object of an interface.
+
+	
 	
 	// We never see WebDriver driver = new WebDriver();
 	// Reason is WebDriver is an Interface and thus we cannot create object of an Interface
-	
+	 
 	// Thats why we write WebDriver driver = new ChromeDriver();
 	// Reason is ChromeDriver is the Child Class for WebDriver Interface.
 	
