@@ -27,8 +27,9 @@ public class a5_IterativeStatements {
 //        doWhile_loop_sample();
 //        doWhile_loop_with_constant_expression();
 //        doWhile_loop_with_variable_expression();
+////        ----------------------------------------------------------------------------------
+        nested_loop_sample();
     }
-
     private static void for_loop_sample() {
         for (int i=0; i<10; i++){
             System.out.println(i);
@@ -174,6 +175,13 @@ public class a5_IterativeStatements {
         }while (i <=0 || i>=0);             // Conditional expression here is a VARIABLE EXPRESSION, thus evaluated by JVM
         System.out.println("After Loop");   // Thus, even though loop is INFINITE LOOP, compiler won't raise any compilation error
     }                                       // for subsequent code as UNREACHABLE STATEMENT
-
+    // -------------------------------------------------------------------------
+    private static void nested_loop_sample() {
+        for (int i=0; i<5; i++){
+            for (int j=0; j<5; j++){
+                System.out.println(i+" "+j);
+            }
+        }
+    }
 
 }
