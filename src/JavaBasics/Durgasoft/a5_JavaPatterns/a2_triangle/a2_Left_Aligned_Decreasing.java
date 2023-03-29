@@ -1,6 +1,6 @@
-package JavaBasics.Durgasoft.a5_JavaPatterns;
+package JavaBasics.Durgasoft.a5_JavaPatterns.a2_triangle;
 
-public class a3_Triangle_Decrementing {
+public class a2_Left_Aligned_Decreasing {
     public static void main(String[] args) {
 //        printing_decrementing_star_pattern_way1();
 //        printing_decrementing_star_pattern_way2();
@@ -25,7 +25,7 @@ public class a3_Triangle_Decrementing {
      */
     private static void printing_decrementing_star_pattern_way1() {
         for (int i=0; i<10; i++){           // row handler
-            for (int j=0; j<(10-i); j++){   // column handler
+            for (int j=0; j<(10-i); j++){   // column handler. Derive j's Max value from i
                                             //      Actual printing part is handled by inner loop
                                             //      Outer loop is to increment i & move JVM to next line
                 System.out.print("*\t");    // prints "*" --> in same line
@@ -36,7 +36,7 @@ public class a3_Triangle_Decrementing {
 
     private static void printing_decrementing_star_pattern_way2() {
         for (int i=0; i<10; i++){           // row handler
-            for (int j=10; j>i; j--){      // column handler
+            for (int j=10; j>i; j--){      // column handler. Derive j's Max value from i
                                             //      Actual printing part is handled by inner loop
                                             //      Outer loop is to increment i & move JVM to next line
                 System.out.print("*\t");    // prints "*" --> in same line
@@ -60,7 +60,7 @@ public class a3_Triangle_Decrementing {
      */
     private static void printing_decrementing_numbers_pattern_row_wise() {
         for (int i=0; i<10; i++){               // row handler
-            for (int j=0; j<(10-i); j++){       // column handler
+            for (int j=0; j<(10-i); j++){       // column handler. Derive j's Max value from i
                                                 //      Actual printing part is handled by inner loop
                                                 //      Outer loop is to increment i & move JVM to next line
                 System.out.print((j+1)+"\t");   // prints j+1 --> in same line
@@ -84,10 +84,10 @@ public class a3_Triangle_Decrementing {
      */
     private static void printing_decrementing_numbers_pattern_column_wise() {
         for (int i=0; i<10; i++){          // row handler
-            for (int j=0; j<(10-i); j++){       // column handler
+            for (int j=0; j<(10-i); j++){       // column handler. Derive j's Max value from i
                                             //      Actual printing part is handled by inner loop
                                             //      Outer loop is to increment i & move JVM to next line
-                System.out.print((i+1)+"\t");   // prints j --> in same line
+                System.out.print((i+1)+"\t");   // prints i --> in same line
             }
             System.out.println();           // moves JVM to next line
         }
@@ -108,7 +108,7 @@ public class a3_Triangle_Decrementing {
      */
     private static void printing_decrementing_alphabet_pattern_row_wise() {
         for (int i=0; i<10; i++){           // row handler
-            for (int j=0; j<(10-i); j++){   // column handler
+            for (int j=0; j<(10-i); j++){   // column handler. Derive j's Max value from i
                                             //      Actual printing part is handled by inner loop
                                             //      Outer loop is to increment i & move JVM to next line
                 char currentAlphabet = (char)(65+j);
@@ -133,7 +133,7 @@ public class a3_Triangle_Decrementing {
      */
     private static void printing_repetitive_alphabets_row_wise() {
         for (int i=0; i<10; i++){       // row handler
-            for (int j=0; j<(10-i); j++){    // column handler
+            for (int j=0; j<(10-i); j++){    // column handler. Derive j's Max value from i
                                             //      Actual printing part is handled by inner loop
                                             //      Outer loop is to increment i & move JVM to next line
                 char currentAlphabet = (char)(65+i);

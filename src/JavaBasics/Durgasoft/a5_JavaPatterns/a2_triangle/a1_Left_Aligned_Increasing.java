@@ -1,6 +1,6 @@
-package JavaBasics.Durgasoft.a5_JavaPatterns;
+package JavaBasics.Durgasoft.a5_JavaPatterns.a2_triangle;
 
-public class a2_Triangle_Incrementing {
+public class a1_Left_Aligned_Increasing {
     public static void main(String[] args) {
 //        printing_incrementing_star_pattern();
 //        printing_incrementing_numbers_pattern_row_wise();
@@ -11,16 +11,16 @@ public class a2_Triangle_Incrementing {
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     /*  To Print:
-     *
-     *	*
-     *	*	*
-     *	*	*	*
-     *	*	*	*	*
-     *	*	*	*	*	*
-     *	*	*	*	*	*	*
-     *	*	*	*	*	*	*	*
-     *	*	*	*	*	*	*	*	*
-     *	*	*	*	*	*	*	*	*	*
+         *
+         *	*
+         *	*	*
+         *	*	*	*
+         *	*	*	*	*
+         *	*	*	*	*	*
+         *	*	*	*	*	*	*
+         *	*	*	*	*	*	*	*
+         *	*	*	*	*	*	*	*	*
+         *	*	*	*	*	*	*	*	*	*
      */
     private static void printing_incrementing_star_pattern() {
         for (int i=0; i<10; i++){           // row handler

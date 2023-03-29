@@ -1,4 +1,4 @@
-package JavaBasics.Durgasoft.a5_JavaPatterns;
+package JavaBasics.Durgasoft.a5_JavaPatterns.a1_square;
 
 public class a1_Square {
     public static void main(String[] args) {
@@ -6,8 +6,10 @@ public class a1_Square {
 //        printing_10_consecutive_numbers_row_wise();
 //        printing_10_consecutive_numbers_column_wise();
 //        printing_10_consecutive_alphabets_row_wise();
-        printing_10_consecutive_alphabets_column_wise();
+//        printing_10_consecutive_alphabets_column_wise();
+        printing_in_box_pattern();
     }
+
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     /* To Print:
@@ -102,7 +104,7 @@ public class a1_Square {
             for (int j=0; j<10; j++){       // column handler
                                             //      Actual printing part is handled by inner loop.
                                             //      Outer loop is to increment i & move JVM to next line
-                char currentAlphabet = (char) (65+j);    // char(65) => A, char(66) => B ....
+                char currentAlphabet = (char) (j+65);    // char(65) => A, char(66) => B ....
                 System.out.print(currentAlphabet+"\t");  // prints "* then TAB" --> 10 times in same line
             }
             System.out.println();           // moves JVM in next line
@@ -127,10 +129,31 @@ public class a1_Square {
             for (int j=0; j<10; j++){       // column handler
                                             //      Actual printing part is handled by inner loop.
                                             //      Outer loop is to increment i & move JVM to next line
-                char currentAlphabet = (char) (65+i);    // char(65) => A, char(66) => B ....
+                char currentAlphabet = (char) (i+65);    // char(65) => A, char(66) => B ....
                 System.out.print(currentAlphabet+"\t");  // prints "* then TAB" --> 10 times in same line
             }
             System.out.println();           // moves JVM in next line
         }
     }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+    /* To print:
+        $  $  $  $
+        $        $
+        $        $
+        $  $  $  $
+     */
+private static void printing_in_box_pattern() {
+    //Create a outer loop to iterate with rows
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            if (i==0 || i ==3 || j==0 || j==3){
+                System.out.print("$  ");
+            }else {
+                System.out.print("   ");
+            }
+        }
+        System.out.println();
+    }
+}
 }
