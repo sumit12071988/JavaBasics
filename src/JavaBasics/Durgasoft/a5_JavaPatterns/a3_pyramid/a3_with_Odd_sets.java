@@ -19,7 +19,7 @@ public class a3_with_Odd_sets {
     private static void print_odd_number_of_stars() {
 //        Outer loop to cover 10 iterations
         for (int i=0; i<5; i++){
-                // Inner loop to handle left spaces
+                // Inner loop to handle reducing spaces from left
                 for (int j=0; j<(5-i); j++){
                     System.out.print(" ");
                 }
@@ -47,12 +47,12 @@ public class a3_with_Odd_sets {
     private static void print_odd_number_of_numbers_variation1() {
 //        Outer loop to cover 10 iterations
         for (int i=0; i<5; i++){
-            // Inner loop to handle left spaces
+            // Inner loop to handle left spaces in a row
             for (int j=0; j<(5-i); j++){
                 System.out.print(" ");
             }
 
-            // Inner loop to handle odd no. of numbers
+            // Inner loop to handle odd no. of numbers in same row
             //  for index 0, 1
             //  for index 1, 123
             //  for index 2, 12345
