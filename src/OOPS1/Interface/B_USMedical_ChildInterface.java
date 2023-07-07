@@ -29,7 +29,7 @@ public interface B_USMedical_ChildInterface extends A_WHO_GrandParentInterface {
 	
 	
 	//RULES: 100% ABSTRACTION.
-	// 1. Methods allowed must be PUBLIC, NON-STATIC and ABSTRACT i.e. without method body
+	// 1. Methods doesn't require access modifier like public, private, protected etc..
 	// 2. Methods allowed with body must be either STATIC or DEFAULT
 	// 3. Variables are CONSTANTS i.e. STATIC and FINAL by default
 	// 4. Cannot create an object of an interface.
@@ -37,9 +37,9 @@ public interface B_USMedical_ChildInterface extends A_WHO_GrandParentInterface {
 	
 	
 	// We never see WebDriver driver = new WebDriver();
-	// Reason is WebDriver is an Interface and thus we cannot create object of an Interface
+	// Reason is WebDriver is an Interface, and thus we cannot create object of an Interface
 	 
-	// Thats why we write WebDriver driver = new ChromeDriver();
+	// That's why we write WebDriver driver = new ChromeDriver();
 	// Reason is ChromeDriver is the Child Class for WebDriver Interface.
 	
 	// After JDK 1.8:
@@ -55,7 +55,7 @@ public interface B_USMedical_ChildInterface extends A_WHO_GrandParentInterface {
 	}
 	
 	// 2. We can have STATIC methods in INTERFACE BUT with method body and those static methods cannot be OVERRIDDEN
-	public static void billing() {
+	static void billing() {
 		System.out.println("US Billing");
 	}
 	

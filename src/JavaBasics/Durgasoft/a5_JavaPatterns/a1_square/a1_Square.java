@@ -1,13 +1,17 @@
 package JavaBasics.Durgasoft.a5_JavaPatterns.a1_square;
 
 public class a1_Square {
+//    public static void main(String[] args) {
+////        printing_10_stars_in_rows_wise_and_column_wise();
+////        printing_10_consecutive_numbers_row_wise();
+////        printing_10_consecutive_numbers_column_wise();
+////        printing_10_consecutive_alphabets_row_wise();
+////        printing_10_consecutive_alphabets_column_wise();
+//        printing_in_box_pattern();
+//    }
+
     public static void main(String[] args) {
-//        printing_10_stars_in_rows_wise_and_column_wise();
-//        printing_10_consecutive_numbers_row_wise();
-//        printing_10_consecutive_numbers_column_wise();
-//        printing_10_consecutive_alphabets_row_wise();
-//        printing_10_consecutive_alphabets_column_wise();
-        printing_in_box_pattern();
+
     }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
