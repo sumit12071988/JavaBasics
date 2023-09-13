@@ -45,7 +45,7 @@ public interface B_USMedical_ChildInterface extends A_WHO_GrandParentInterface {
 	// After JDK 1.8:
 	// 1. INTERFACES can have method body using DEFAULT method, which can be OVERRIDDEN in CLASS which IMPLEMENTS the interface
 	//		DEFAULT access modifier is used to mention some Default feature of the INTERFACE. This DEFAULT method is not used in SELENIUM
-	//		DEFAULT access modifier doesn't effect the intention behind creating INTERFACE.
+	//		DEFAULT access modifier doesn't affect the intention behind creating INTERFACE.
 	//		INTERFACES are created with an intention to set RULES !!
 	//					which every class (which intends to IMPLEMENT the INTERFACE) MUST DEFINE THOSE RULES
 	//		DEFAULT access modifier is used create to minor methods which we can either override or use it directly
